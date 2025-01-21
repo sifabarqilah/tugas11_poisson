@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4b0082; /* Set purple background color for the page */
+    background-image: url('https://www.example.com/space-image.jpg'); /* Add your space image URL here */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header {
+    background-color: #6a1b9a; /* Purple color for the header */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+nav a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    animation: slide-in 0.3s forwards;
+}
+
+.container {
+    margin: 50px auto;
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+label, input, button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+
+button {
+    background-color: #6a1b9a; /* Button color matching header */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a148c; /* Slightly darker shade on hover */
+}
